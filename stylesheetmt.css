@@ -1,0 +1,233 @@
+*{/* body*/
+    margin: 0;
+    padding: 0;
+} 
+
+/* formulairecontact*/
+
+
+.f-hotel div {
+    padding: 0 5px;
+    margin-top: 3% ;
+} 
+
+.f-hotel{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    position:absolute;
+    top:40%;
+    left:30%;
+    width: 60%;
+    height: 50%;
+}
+
+.f-img {
+    position: relative;
+    left: 30%;
+    top: 1%;
+    width: 200px;
+    height:200px;
+}
+
+.f-h1{
+    margin: 0;
+    padding-bottom: 8%;
+    text-align: center;
+    font-size: 40px;
+}
+
+strong{
+    font-size: 12px;
+    text-align: flex-star;
+    color: #ff0000
+}
+.f-hotel select {
+    margin-bottom: 20px 0;
+    padding-left: 0 10px;
+    width: 80%;
+}
+
+.f-hotel input[type="text"],
+.f-hotel input[type="tel"],
+.f-hotel input[type="email"]{
+    border: none;
+    border-radius: 10px dashed #473636;
+    outline:none;
+    width: 80%;
+    height: 40px;
+    margin: 1em;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-items: flex-end;
+    background-color: #f5f5dc; 
+}
+
+.f-hotel input[type="radio"]{
+    width: 10%;
+    height: 10%;
+}
+
+::placeholder{
+    color: #BD9E57;
+}
+
+.f-hotel select {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.f-hotel input[type="submit"]{
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    background-color: #BD9E57;
+    cursor: pointer;
+    border-radius:20px ;
+}
+
+.femme, .homme {
+    width: 20%;
+    height: 20px;
+    margin: 1em;
+    padding: 0.5rem 1rem;
+} 
+
+.f-hotel label {
+    margin: 0;
+    padding: 0;
+    color: #241024;
+    font-weight: bold;
+}
+
+.f-hotel textarea{
+    display: block;
+    width: 80%;
+    margin-left: 1em;
+    border-radius: 10px;
+    border: 1px dashed #473636;
+    height: 80px;
+    padding: 0.5em;
+
+} 
+/*******Autre choix de style pour les input *****/
+/* .nom, .prenom, .email, .tel , .enteprise {
+    border: none;
+    border-radius: 10px dashed #473636;
+    outline:none;
+    width: 80%;
+    height: 40px;
+    margin: 1em;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-items: flex-end;
+    background-color: #f5f5dc; 
+} */
+
+.f-hotel .buttom {
+    border: none;
+    padding: 2% 10%;
+    border-radius: 10px dashed #633030;
+    font-size: 20px;
+}
+
+.f-p:first-child{ 
+    font-size: 12px;
+    text-align: start;
+}
+
+.f-p { 
+    font-size: 12px;
+    text-align: center;
+}
+
+.f-hotel >input[type="radio"]{
+    width: 10%;
+    height: 10%;
+}
+
+.adress{
+    display: flex;
+    width: 100%;
+}
+.t-adress{
+    flex-wrap: wrap;
+}
+
+.adress >hr {
+    border-top: 5px solid #B28737;
+}
+
+.f-hotel .gras{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.f-iframe {
+    height: 80%;
+}
+
+/*************** fin du formulaire************/
+
+/* cartes du restaurant*/ 
+
+.mtmain{/* corps   */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.mtimg {/* image */ 
+    width: 660px;
+    height: 750px;
+    margin: auto;
+    position: fixed;
+    top: 20%;
+    left: 23%;
+}
+
+.btn-carte{/* bouton de retour au sujet*/ 
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background: #a57b1b;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 14px;
+    padding: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.4s;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.bt-carte:hover{/* annuler l'effet :hover */
+    color:#ffffff ;
+}
+
+/*fin cartes restaurant */
+
+/* debut plan du site */
+
+.plan-main{
+    width: 70%;
+    height: 60%;
+    margin : auto;
+    
+}
+
+.general-p{
+    width: 100%;
+    border-radius: 6px solid #B28757;
+    padding-top: 2%;
+    margin : 0;
+
+}
+
+/* fin plan du site */
+
+/*début de footer */
