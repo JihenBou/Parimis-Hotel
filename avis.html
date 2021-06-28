@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Avis client</title>
+    <!-- partie css-->
+        <link rel="stylesheet" href="css/soin1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+    <!-- fin partie css -->
+
+</head>
+<body>
+    <div class="containerMA">
+        <div class="left">
+            <div class="left">
+                <img id="frLogo" src="img/fr.png" alt="English">
+
+                <a href="accueil">
+                <img src="img/en.png" alt="English">
+                </a>
+            </div>
+            
+        </div>
+        <div class="header-logo">
+            <a href="accueil"><img src="img/ParimisLogo1.png" alt="logo"></a>
+        </div>
+        
+        <div class="header_droite">
+            <div class="panier">
+                <a href="panier"><img src="https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v2.png" alt="logo"/></a>
+            </div>
+            <div class="recherche">
+            <form id="search">
+            <input type="text" name="search" placeholder="Recherchez...">
+            <input type="submit" name="search" value="Ok">
+            </form>
+            </div>
+            
+        </div>
+        
+        <div class="clear"></div>
+
+    </div>
+    <header> 
+    
+        <nav>
+            <div class="logo">PARISMIS HÔTEL</div>
+            <label for="btnMA" class="iconeMA">
+                <span><i class="fa fa-bars"></i></span>
+            </label>
+            <input  class="nav1" type="checkbox" id="btnMA">
+            <ul>
+                <li> <a href="index.html"> Accueil</a> </li>
+                <li> <a href="hotel.html"> Hôtel</a> </li>
+
+                <li>
+                    <label for="btn-1" class="show">Restaurant+</label>
+                    <a href="restaurant.html"> Restaurant</a>
+                    <input class="nav1" type="checkbox" id="btn-1">
+                    <ul>
+                        <li> <a href="matin.html"> Carte du matin </a> </li>
+                        <li> <a href="midi.html"> Carte du midi</a> </li>
+                        <li> <a href="soir.html"> Carte du soir</a> </li>
+        
+                    </ul>
+                </li>
+                <li> 
+                    <label for="btn-2" class="show">Séjours +</label>
+                    <a href="sejours.html"> Séjours</a> 
+                    <input class="nav1" type="checkbox" id="btn-2">
+                    <ul>
+                        <li> <a href="chambres/classique.html"> Classique</a> </li>
+                        <li> <a href="chambres/confort.html">  Confort</a> </li>
+                        <li> <a href="chambres/deluxe.html"> Deluxe</a> </li>
+                        <li> <a href="chambres/suite.html"> Suite</a> </li>    
+                    </ul>
+                </li>
+                <li> 
+                    <label for="btn-2" class="show">Spa+</label>
+                    <a href="spa.html"> Spa</a> 
+                    <input class="nav1" type="checkbox" id="btn-3">
+                    <ul>
+                        <li> <a href="spa/soin1.html"> Soin 1</a> </li>
+                        <li> <a href="spa/soin2.html"> Soin 2</a> </li>
+                        <li> <a href="spa/soin3.html"> Soin 3</a> </li>
+                        <li> <a href="spa/soin4.html"> Soin 4</a> </li> 
+                        <li> <a href="spa/soin5.html"> Soin 5</a> </li>    
+
+                    </ul>
+                </li>
+        
+            </ul>
+        
+        </nav>
+    </header>
+    <main style="width: 100%;">
+        <div class="containerAvisMA">
+            
+            <div class="container2AvisMA">
+                <div class="titreAvisMa"><h2>Laissez votre avis : </h2></div>
+                <form class="FormAVISMA" action="#">
+                    <label for="civilite"></label>
+                    <select name="civilite" id="civilite">
+                      <option disabled selected value>Civilité*</option>
+                      <option value="madame">Madame</option>
+                      <option value="monsieur">Monsieur</option>
+                    </select>
+          
+                    <label for="lastname"></label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Prénom*" />
+          
+                    <label for="nom"></label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom*" />
+          
+                    <label for="mail"></label>
+                    <input type="email" name="mail" id="mail" placeholder="email*" />
+          
+                    <label for="phone" ></label>
+                    <input type="tel" name="tel" id="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2} " placeholder="Votre téléphone" required>
+          
+                    <label for="sujet" ></label>
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet*" />
+          
+                    <textarea name="commentaire" id="commentaire" cols="40" rows="10" placeholder="Votre message*"></textarea>
+                    
+                    <label for="avisEtoile"> Notez ici : </label>
+                    <select name="etoile">
+                        
+                        <option disabled selected value="1 étoile"> 1 </option>
+                        <option value="2 étoile">2</option>
+                        <option value="3 étoile">3</option>
+                        <option value="4 étoile">4</option>
+                        <option value="5 étoile">5</option>
+                    </select>
+                    <button type="submit" class="but3">envoyer</button>
+                  </form>
+            </div>
+        
+            <div class="container2AvisMA">
+                <div class="titreAvisMa"><h2> Ils ont parlé :  </h2></div>
+                    <div class="AvisMa">
+                        <img src="img/avatar1.png" alt="homme avatar">
+                        <p> je ne sais pas quoi dire
+                            <img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"> </p>
+                        
+                    </div>
+                    <div class="AvisMa">
+                        <img src="img/avatar2.png" alt="homme avatar">
+                        <p> je ne sais pas quoi dire <img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"></p>
+
+                    </div>
+                    <div class="AvisMa">
+                        <img src="img/avatar3.png" alt="homme avatar">
+                        <p> je ne sais pas quoi dire <img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star">
+                             </p>
+                    </div>
+                    <div class="AvisMa">
+                        <img src="img/avatar4.png" alt="homme avatar">
+                        <p> je ne sais pas quoi dire
+                            <img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"><img src="img/etoile.png" alt="star"> </p>
+                    </div>
+
+            </div>
+         </div>   
+     
+    </main>
