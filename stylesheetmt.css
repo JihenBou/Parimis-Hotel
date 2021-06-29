@@ -3,35 +3,26 @@
     padding: 0;
 } 
 
-/* formulairecontact*/
+/* formulaire contact*/
 
 
-.f-hotel div {
-    padding: 0 5px;
-    margin-top: 3% ;
-} 
-
-.f-hotel{
+.form-hotel{
     font-family: 'Roboto', sans-serif;
-    border-radius: 15px;
-    position:absolute;
-    top:40%;
-    left:30%;
-    width: 60%;
-    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    
 }
 
-.f-img {
-    position: relative;
-    left: 30%;
-    top: 1%;
-    width: 200px;
-    height:200px;
-}
+/* .premiere{
+    
+    flex-direction: row;
+} */
 
-.f-h1{
+.form-hotel>h1{
+    margin-top: 2%;
     margin: 0;
-    padding-bottom: 8%;
     text-align: center;
     font-size: 40px;
 }
@@ -41,15 +32,15 @@ strong{
     text-align: flex-star;
     color: #ff0000
 }
-.f-hotel select {
+.form-hotel >select {
     margin-bottom: 20px 0;
     padding-left: 0 10px;
     width: 80%;
 }
 
-.f-hotel input[type="text"],
-.f-hotel input[type="tel"],
-.f-hotel input[type="email"]{
+.form-hotel input[type="text"],
+.form-hotel input[type="tel"],
+.form-hotel input[type="email"]{
     border: none;
     border-radius: 10px dashed #473636;
     outline:none;
@@ -62,47 +53,35 @@ strong{
     background-color: #f5f5dc; 
 }
 
-.f-hotel input[type="radio"]{
-    width: 10%;
-    height: 10%;
-}
-
 ::placeholder{
     color: #BD9E57;
 }
 
-.f-hotel select {
+.form-hotel>select {
     margin-top: 20px;
     margin-left: 20px;
     padding: 10px 0;
-    width: 80%;
+    width: 250px;
 }
 
-.f-hotel input[type="submit"]{
+.form-hotel input[type="submit"]{
     border: none;
     height: 40px;
-    outline: none;
+    /* outline: none; */
     font-size: 15px;
     background-color: #BD9E57;
     cursor: pointer;
     border-radius:20px ;
 }
 
-.femme, .homme {
-    width: 20%;
-    height: 20px;
-    margin: 1em;
-    padding: 0.5rem 1rem;
-} 
-
-.f-hotel label {
+.form-hotel label {
     margin: 0;
     padding: 0;
-    color: #241024;
+    color: #2a2a2a;
     font-weight: bold;
 }
 
-.f-hotel textarea{
+.form-hotel textarea{
     display: block;
     width: 80%;
     margin-left: 1em;
@@ -110,32 +89,16 @@ strong{
     border: 1px dashed #473636;
     height: 80px;
     padding: 0.5em;
-
 } 
-/*******Autre choix de style pour les input *****/
-/* .nom, .prenom, .email, .tel , .enteprise {
-    border: none;
-    border-radius: 10px dashed #473636;
-    outline:none;
-    width: 80%;
-    height: 40px;
-    margin: 1em;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-items: flex-end;
-    background-color: #f5f5dc; 
-} */
 
-.f-hotel .buttom {
-    border: none;
-    padding: 2% 10%;
-    border-radius: 10px dashed #633030;
-    font-size: 20px;
+.gras{
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: bold;
 }
 
-.f-p:first-child{ 
-    font-size: 12px;
-    text-align: start;
+.form-hotel >.btn {
+    border-radius: 10px dashed #633030;
 }
 
 .f-p { 
@@ -143,35 +106,13 @@ strong{
     text-align: center;
 }
 
-.f-hotel >input[type="radio"]{
-    width: 10%;
-    height: 10%;
-}
-
-.adress{
-    display: flex;
-    width: 100%;
-}
-.t-adress{
-    flex-wrap: wrap;
-}
-
-.adress >hr {
-    border-top: 5px solid #B28737;
-}
-
-.f-hotel .gras{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.f-iframe {
-    height: 80%;
+.form-iframe{
+    margin-right: 100px;
 }
 
 /*************** fin du formulaire************/
 
-/* cartes du restaurant*/ 
+/* *************cartes du restaurant***************/ 
 
 .mtmain{/* corps   */
     width: 100vw;
@@ -180,8 +121,8 @@ strong{
 }
 
 .mtimg {/* image */ 
-    width: 660px;
-    height: 750px;
+    width: 460px;
+    height: 550px;
     margin: auto;
     position: fixed;
     top: 20%;
@@ -209,15 +150,14 @@ strong{
     color:#ffffff ;
 }
 
-/*fin cartes restaurant */
+/*******************fin cartes restaurant***************** */
 
-/* debut plan du site */
+/*************** debut plan du site ***************/
 
 .plan-main{
     width: 70%;
     height: 60%;
     margin : auto;
-    
 }
 
 .general-p{
@@ -225,9 +165,118 @@ strong{
     border-radius: 6px solid #B28757;
     padding-top: 2%;
     margin : 0;
-
 }
 
-/* fin plan du site */
+/******************* fin plan du site ****************/
+
 
 /*début de footer */
+.mainmt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.mt-contenu {
+    /* grow shrink basis permet de renvoyer le footer vers le bas*/ 
+    flex: 1 0 auto;
+}
+
+.mt-contenu p{
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+
+.f-img{
+    justify-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+footer {
+    flex-shrink: 0;/*^permet de maintenir le footer en bas de page */
+    border-top: 2px solid #BD9E57 ;
+    width: 100%;
+    background-color:#000;
+    color: white;
+}
+
+.mt-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 0px 0 10px;
+}
+
+.mt-infos h4,
+.mt-services h4,
+.mt-socials h4,
+.mt-mentions h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/********************debut PRESSE ********************/
+
+.presseArt{/*body  */
+    margin: 0;
+    padding:0;
+    background-color: #943494;
+}
+
+.articleHotel {/* container  */
+    background-color: #B28737;
+    display: flex;
+    width: auto;
+    height: 700px;
+}
+
+.numero {/* div : enfant du container*/ 
+    border: solid black 1px;
+    background: white;
+    padding: 6px;
+    margin:10px;
+    width:50% ;
+    }
+
+.numero>p {
+    color: #2a2a2a;
+}
+    
+.journal{ 
+    float: left;
+    border: solid #B28737 1px;
+    background: #0e0e2f;
+    color: white;
+    border-radius: 2px;
+    padding: 4px;
+    }
+    
+    .date {
+        float: right;
+        border: solid #5252ce 1px;
+        background: #0e0e2f;
+        color: white;
+        border-radius: 2px;
+        padding: 4px;
+    }
+    
+    .presseImg {
+        width: 100%;
+        border: 1px black ;
+    }
+    
+    .numero:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    }
+
+    
+    
+
+/******************fin PRESSE**************************/
+

@@ -1,82 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="pied de page">
+    <meta name="description" content="Ici, vous etes sur le formulaire contact de l'hotel PARIMIS, merci de nous aidez à vous répondre à vos attentes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/stylesheetmt.css">
+    <title>formulaire de contact - Hotel PARIMIS</title>
+    Bootstrap JS
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/soin1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheetmt.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>contact1</title>
-
-
+    <!-- fin partie css -->
 </head>
-
 <body>
-    <!---********HEADER**********-->
-    <div id="headerlogo">
-        <a href="index.html"><img src="../img/ParimisLogo1.png" alt="logoParimis"></a>
+    <div class="containerMA">
+        <div class="left">
+            <div class="left" a href="accueil">
+                <a href="accueil">
+                <img id="frLogo" src="img/fr.png" alt="English">
+
+                <a href="accueil">
+                <img src="img/en.png" alt="English">
+                </a>
+            </div>
+            
         </div>
-        <header> 
+        <div class="header-logo">
+            <a href="accueil"><img src="img/ParimisLogo1.png"></a>
+        </div>
         
+        <div class="header_droite">
+            <div class="panier">
+                <a href="panier"><img src="https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v2.png"/></a>
+            </div>
+            <div class="recherche">
+            <form method="" id="search" action="">
+            <input type="text" name="" placeholder="Recherchez...">
+            <input type="submit" name="" value="Ok">
+            </form>
+            </div>
+            
+        </div>
         
+        <div class="clear"></div>
+
+    </div>
+    <header> 
+    
         <nav>
-        <div class="logo">PARISMIS HÔTEL</div>
-        <ul>
-            <li> <a href="index.html"> Accueil</a> </li>
-            <li> <a href="hotel.html"> Hôtel</a> </li>
+            <div class="logo">PARISMIS HÔTEL</div>
+            <label for="btnMA" class="iconeMA">
+                <span><i class="fa fa-bars"></i></span>
+            </label>
+            <input  class="nav1" type="checkbox" id="btnMA">
+            <ul>
+                <li> <a href="index.html"> Accueil</a> </li>
+                <li> <a href="hotel.html"> Hôtel</a> </li>
+
+                <li>
+                    <label for="btn-1" class="show">Restaurant+</label>
+                    <a href="restaurant.html"> Restaurant</a>
+                    <input class="nav1" type="checkbox" id="btn-1">
+                    <ul>
+                        <li> <a href="matin.html"> Carte du matin </a> </li>
+                        <li> <a href="midi.html"> Carte du midi</a> </li>
+                        <li> <a href="soir.html"> Carte du soir</a> </li>
         
-            <li>
-                <label for="btn-1" class="show">Restaurant+</label>
-                <a href="restaurant.html"> Restaurant</a>
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li> <a href="matin.html"> Carte du matin </a> </li>
-                    <li> <a href="midi.html"> Carte du midi</a> </li>
-                    <li> <a href="soir.html"> Carte du soir</a> </li>
+                    </ul>
+                </li>
+                <li> 
+                    <label for="btn-2" class="show">Séjours +</label>
+                    <a href="sejours.html"> Séjours</a> 
+                    <input class="nav1" type="checkbox" id="btn-2">
+                    <ul>
+                        <li> <a href="chambres/classique.html"> Classique</a> </li>
+                        <li> <a href="chambres/confort.html">  Confort</a> </li>
+                        <li> <a href="chambres/deluxe.html"> Deluxe</a> </li>
+                        <li> <a href="chambres/suite.html"> Suite</a> </li>    
+                    </ul>
+                </li>
+                <li> 
+                    <label for="btn-2" class="show">Spa+</label>
+                    <a href="spa.html"> Spa</a> 
+                    <input class="nav1" type="checkbox" id="btn-1">
+                    <ul>
+                        <li> <a href="spa/soin1.html"> Soin 1</a> </li>
+                        <li> <a href="spa/soin2.html"> Soin 2</a> </li>
+                        <li> <a href="spa/soin3.html"> Soin 3</a> </li>
+                        <li> <a href="spa/soin4.html"> Soin 4</a> </li> 
+                        <li> <a href="spa/soin5.html"> Soin 5</a> </li>    
+
+                    </ul>
+                </li>
         
-                </ul>
-            </li>
-            <li> 
-                <label for="btn-2" class="show">Séjours +</label>
-                <a href="sejours.html"> Séjours</a> 
-                <input type="checkbox" id="btn-2">
-                <ul>
-                    <li> <a href="chambres/classique.html"> Classique</a> </li>
-                    <li> <a href="chambres/confort.html">  Confort</a> </li>
-                    <li> <a href="chambres/deluxe.html"> Deluxe</a> </li>
-                    <li> <a href="chambres/suite.html"> Suite</a> </li>    
-                </ul>
-            </li>
-            <li> 
-                <label for="btn-2" class="show">Spa+</label>
-                <a href="spa.html"> Spa</a> 
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li> <a href="spa/soin1.html"> Soin 1</a> </li>
-                    <li> <a href="spa/soin2.html"> Soin 2</a> </li>
-                    <li> <a href="spa/soin3.html"> Soin 3</a> </li>
-                    <li> <a href="spa/soin4.html"> Soin 4</a> </li> 
-                    <li> <a href="spa/soin5.html"> Soin 5</a> </li>    
-        
-                </ul>
-            </li>
-        
-        </ul>
+            </ul>
         
         </nav>
-        </header> 
+    </header>
+<!--**********************fin du header--> 
         <!---********FORMULAIRE CONTACT**********-->
     
-<div class="f-hotel">
-
-    <form action="##" method="post">
+<div class="form-hotel">
+   
+    <form action="##" method="post" class="premiere">
 
         <h1 class='f-h1'>Contactez nous</h1>
 				
@@ -84,76 +114,131 @@
         
         <div >
             <p>Civilité*</p>
-            <br>
-            <label for="femme">Mme </label>
-            <input type="radio" class="femme" name="sexe" >
-            <!--les radios ne s'affichent pas-->
-            <label for="homme">M. </label>
-            <input type="radio" class="homme" name="sexe">
-        </div>
-        <br>
-        <div>
 
-            <label for="nom">Nom* </label>
-            <input type="text" class="nom" placeholder="Entrer votre nom">                   
+            <label for="civilité"> </label>
+                <select name="c-sujet">
+                <option>civilité</option>
+                <option>Madame</option>
+                <option>Monsieur</option>
+            </select>
+
+            <div>
+            <label for="nom">Nom*</label>
+            <input type="text" class="nom" placeholder="Entrer votre nom">  
         </div>
 
-        <div>
             <label for="prénom">Prénom* </label>
             <input type="text" class="prenom" placeholder="Entrer votre prénom">
-        </div>
 
-        <div>
             <label for="entreprise">Entreprise* </label>
             <input type="text" class="enteprise" placeholder="Entrer le nom de votre entreprise">
-        </div>
 
-        <div>
             <label for="email">E-mail* </label>
             <input type="email" class="email" placeholder="conctact@....fr">
-        </div>
 
-        <div>
             <label for="tel">Téléphone* </label>
             <input type="tel" class="tel" placeholder="Entrer votre numéro de téléphone">
-        </div>
 
-        <div>
-            <label for="">Objet de votre demande*</label>
+            <label for=""></label>
                 <select name="c-sujet">
-                <option>choix</option>
+                <option>Objet de votre demande*</option>
                 <option>Restaurant</option>
                 <option>Spa</option>
                 <option>Ordre général</option>
             </select>
-        </div>
 <br>
-        <div>
+        
             <label for="msg">Commentaire</label>
             <textarea name="msg" class="msg" rows="20" cols="40" placeholder="votre message"></textarea>
-        </div>
+        
 <br>
-        <div class="buttom">               
+        <div class="btn">               
             <input type="submit" value="VALIDER">
-        </div>
+        
+        <br><br>
         <p>NB : Merci de ne pas mettre de lien dans votre message, </p>
-        </form>
-<br><hr>
-        <div class="adress">
-            
-            <div class="t-addres">
-            <h3>Coordonnées </h3>
-            <p>HÔTEL PARIMIS<br>
-            1 avenue Montaigne 75008 Paris - France<br>
-            Tél. : <a href="tel:+33.10101010" class="gras">+ (33)01.01.01.01.01</a>
-            <p>Email : <a href="mailto:contact@jane-et-bernie.fr" class="gras">contact@parimis.com</a></p>
-            </div>
-            <div class="t-addres">
-                <iframe class="f-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071672288!2d2.299889715222021!3d48.86507470819083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1624719648184!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-    </div >
     
-        <!---********DEBUT FORMULAIRE**********-->
+        </form> 
+<br>
+    </div class="deuxieme">
+    <div class="adresseHotel">
+        <h3>Coordonnées</h3>
+        <p>Hôtel PARIMIS <br>
+            1 avenue Montaigne 75008 PARIS - France <br>
+            Tél: <a href="tel:+33.101010101" class="gras">+ (33)01.01.01.01.01</a>
+        </p>
+        <p>Email : <a href="mailto:contact@jane-et-bernie.fr" class="gras">contact@parimis.com</a></p>
+    </div>
+    <div class="adresseHotel">
+        <iframe class="form-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071672288!2d2.299889715222021!3d48.86507470819083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1624719648184!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    </div >
+        </div>
+    
+
+    <!-- footer------------------>
+    
+    <footer>
+        <div class="mt-footer">
+            <article id="MTS">
+                <div class="mt-socials">
+                    <h4>Suivez-nous</h4>
+                    
+                    <a href="index.html"><img src="img/facebook.png" alt=""></a>
+                    <a href="index.html"><img src="img/twitter.png" alt=""></a>
+                    <a href="index.html"><img src="img/instagram.png" alt=""></a>
+                    <a href="index.html"><img src="img/tripadvisor.png" alt=""></a>
+                    <a href="index.html"><img src="img/partager.png" alt=""></a>
+                    
+                </div>
+                <div class="foot mt-infos">
+                    <!-- <img class="f-img"src="img/boojournalark.png" alt=""> -->
+                        <h4>Nos informations</h4>
+                    
+                            <a href="Contact.html"><label for="newsletter">Newsletter </label>
+                                <input id="InputNew"type="submit" value="email"><input type="newsletter" class="newsletter"></a>
+                            <a href="#">Actualités</a>
+                            <a href="#">Evenements</a>
+                            <a href="#">Presse</a>
+
+                    </div>
+                </article>
+        
+            <div class="foot mt-services">
+                <!-- <img class="f-img" src="img/lieu.png" alt=""> -->
+                <h4>Nos services</h4><br>
+                <p>Panier</p>
+                    <a href="#">Acces</a>
+                    <a href="#">Réservation</a>
+            </div>
+            
+            
+            <div class="foot mt-mentions"> 
+                <!-- <img class="f-img" src="img/hôtel-5.png" alt=""> -->
+                <h4> Autres</h4><br>
+                <a href="#">Mentions légales</a>
+                <a href="#">Conditions générales de ventes</a>
+                <a href="#">Recrutement</a>
+                <a href="#">Contact</a>
+                <a href="#">Plan du site</a>
+                
+            </div>
+            <div style="text-align: end;">
+            
+                <div onClick="window.print()" class="print">
+                <i style="color: white;" class=" fas fa-print"></i>
+                <!-- <p>Imprimer la page</p> -->
+                </div>
+            </div> 
+        </div>
+        <br>
+    
+        <div class="f-copy"><p><font size=5>&copy;</font>2021 copyright - Hôtel PARIMIS 75008 PARIS - site fictif</p></div>
+        </footer> 
+                
+    <!--Fin du FOOTER-->
+    
 
         <!---********FIN FORMULAIRE**********-->
 
