@@ -25,57 +25,91 @@
 </head>
 
 <body>
+  <div class="containerMA">
+        <div class="left">
+            <a href="https://www.reverso.net/text_translation.aspx?lang=FR">
+                <img id="frLogo" src="../img/fr.png" alt="English">
+            </a>
+            <a href="https://www.reverso.net/text_translation.aspx?lang=EN">
+                <img src="../img/" alt="English">
+            </a>
+        </div>
+            
+        </div>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/ParimisLogo1.png"></a>
+        </div>
+        
+        <div class="header_droite">
+            <div class="panier">
+                <a href="#"><img src="https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v2.png"/></a>
+            </div>
+            <div class="recherche">
+            <form method="" id="search" action="">
+            <input type="text" name="" placeholder="Recherchez...">
+            <input type="submit" name="" value="Ok">
+            </form>
+            </div>
+            
+        </div>
+        
+        <div class="clear"></div>
 
-    <div id="headerlogo">
-        <a href="index.html"><img src="./img/ParimisLogo.png" alt="logoParimis"></a>
     </div>
-    <header>
+    <header> 
+    
         <nav>
             <div class="logo">PARISMIS HÔTEL</div>
+            <label for="btnMA" class="iconeMA">
+                <span><i class="fa fa-bars"></i></span>
+            </label>
+            <input  class="nav1" type="checkbox" id="btnMA">
             <ul>
-                <li> <a href="index.html"> Accueil</a> </li>
-                <li> <a href="hotel.html"> Hôtel</a> </li>
+                <li> <a href="../index.html"> Accueil</a> </li>
+                <li> <a href="../hotel.html"> Hôtel</a> </li>
+                
 
                 <li>
                     <label for="btn-1" class="show">Restaurant+</label>
-                    <a href="restaurant.html"> Restaurant</a>
-                    <input type="checkbox" id="btn-1">
+                    <a href="../restaurant.html"> Restaurant</a>
+                    <input class="nav1" type="checkbox" id="btn-1">
                     <ul>
-                        <li> <a href="matin.html"> Carte du matin </a> </li>
-                        <li> <a href="midi.html"> Carte du midi</a> </li>
-                        <li> <a href="soir.html"> Carte du soir</a> </li>
-
+                        <li> <a href="../restaurant/brasserie.html"> brasserie </a> </li>
+                        <li> <a href="../restaurant/degustation.html"> degustation</a> </li>
+                        <li> <a href="../restaurant/diner.html"> diner</a> </li>
+        
                     </ul>
                 </li>
-                <li>
+                <li> 
                     <label for="btn-2" class="show">Séjours +</label>
-                    <a href="sejours.html"> Séjours</a>
-                    <input type="checkbox" id="btn-2">
+                    <a href="../sejours.html"> Séjours</a> 
+                    <input class="nav1" type="checkbox" id="btn-2">
                     <ul>
-                        <li> <a href="chambres/classique.html"> Classique</a> </li>
-                        <li> <a href="chambres/confort.html">  Confort</a> </li>
-                        <li> <a href="chambres/deluxe.html"> Deluxe</a> </li>
-                        <li> <a href="chambres/suite.html"> Suite</a> </li>
+                        <li> <a href="../chambres/classique.html"> Classique</a> </li>
+                        <li> <a href="../chambres/confort.html">  Confort</a> </li>
+                        <li> <a href="../chambres/deluxe.html"> Deluxe</a> </li>
+                        <li> <a href="../chambres/"> Suite</a> </li>    
                     </ul>
                 </li>
-                <li>
+                <li> 
                     <label for="btn-2" class="show">Spa+</label>
-                    <a href="spa.html"> Spa</a>
-                    <input type="checkbox" id="btn-1">
+                    <a href="../spa.html"> Spa</a> 
+                    <input class="nav1" type="checkbox" id="btn-1">
                     <ul>
-                        <li> <a href="soin-detente.html"> Soin Detente</a> </li>
-                        <li> <a href="soin-decouverte.html">Soin Decouverte</a> </li>
-                        <li> <a href="soin-relaxant.html">Soin Relaxant</a> </li>
-                        <li> <a href="soin-plaisir.html">Soin Plaisir</a> </li>
-                        <li> <a href="soin-evasion.html">Soin Evasion</a> </li>
-
+                        <li> <a href="soinDetente.html"> Détente</a> </li>
+                        <li> <a href="soinDecouverte.html"> Découverte</a> </li>
+                        <li> <a href="soinEvasion.html"> Evasion</a> </li>
+                        <li> <a href="soinPlaisir.html"> Plaisir</a> </li> 
+                        <li> <a href="soinRelaxant.html"> Relaxant</a> </li>
                     </ul>
                 </li>
-
+                <li> <a href="../contact.html"> Contact</a> </li>
+        
             </ul>
-
+        
         </nav>
     </header>
+    
     <main class="spa">
 
         <section>
@@ -193,7 +227,65 @@
             </form>
         </section>
     </main>
+    
+<footer>
+    <div class="mt-footer">
+        <article id="MTS">
+            <div class="mt-socials">
+                <h4>Suivez-nous</h4>
+                
+                <a href="index.html"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="index.html"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="index.html"><img src="img/instagram.png" alt="instagram"></a>
+                <a href="index.html"><img src="img/tripadvisor.png" alt="tripadvisor"></a>
+                <a href="index.html"><img src="img/partager.png" alt="partager"></a>
+                
+            </div>
+            <div class="foot mt-infos">
+                <!-- <img class="f-img"src="img/bookmark.png" alt=""> -->
+                    <h4>Nos informations</h4>
+                
+                        <label for="newsletter">Newsletter </label>
+                            <input type="email" id="newsletter">
+                        <a href="actualites.html">Actualités</a>
+                        <a href="actualites.html">Evenements</a>
+                        <a href="presse.html">Presse</a>
 
+                </div>
+            </article>
+    
+        <div class="foot mt-services">
+            <!-- <img class="f-img" src="img/lieu.png" alt=""> -->
+            <h4>Nos services</h4><br>
+            <p>Panier</p>
+                <a href="../contact.html">Acces</a>
+                <a href="reservation.html">Réservation</a>
+        </div>
+        
+        
+        <div class="foot mt-mentions"> 
+            <!-- <img class="f-img" src="img/hôtel-5.png" alt=""> -->
+            <h4> Autres</h4><br>
+            <a href="mentionslegales.html">Mentions légales</a>
+            <a href="cgv.html">Conditions générales de ventes</a>
+            <a href="recrutement.html">Recrutement</a>
+            <a href="contact.html">Contact</a>
+            <a href="planSite.html">Plan du site</a>
+            
+        </div>
+        <div style="text-align: end;">
+        
+            <div onClick="window.print()" class="print">
+                <h6 id="printP">Imprimer la page</h6> 
+            <i style="color: white;" class=" fas fa-print"></i>
+            <!-- <p>Imprimer la page</p> -->
+            </div>
+        </div> 
+    </div>
+    <br>
+
+    <div class="f-copy"><p id="copyfoot">&copy; 2021 copyright - Hôtel PARIMIS 75008 PARIS - site fictif</p></div>
+    </footer> 
 
 
     <!-- JS -->
