@@ -1,0 +1,290 @@
+*{/* body*/
+    margin: 0;
+    padding: 0;
+} 
+
+/* formulaire contact*/
+
+
+.form-hotel{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+/* .premiere{
+    
+    flex-direction: row;
+} */
+
+.form-hotel>h1{
+    margin-top: 2%;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+strong{
+    font-size: 12px;
+    text-align: flex-star;
+    color: #ff0000
+}
+.form-hotel >select {
+    margin-bottom: 20px 0;
+    padding-left: 0 10px;
+    width: 80%;
+}
+
+.form-hotel input[type="text"],
+.form-hotel input[type="tel"],
+.form-hotel input[type="email"]{
+    border: none;
+    border-radius: 10px dashed #473636;
+    outline:none;
+    width: 80%;
+    height: 40px;
+    margin: 1em;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-items: flex-end;
+    background-color: #f5f5dc; 
+}
+
+::placeholder{
+    color: #BD9E57;
+}
+
+.form-hotel>select {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0;
+    width: 250px;
+}
+
+.form-hotel input[type="submit"]{
+    border: none;
+    height: 40px;
+    /* outline: none; */
+    font-size: 15px;
+    background-color: #BD9E57;
+    cursor: pointer;
+    border-radius:20px ;
+}
+
+.form-hotel label {
+    margin: 0;
+    padding: 0;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.form-hotel textarea{
+    display: block;
+    width: 80%;
+    margin-left: 1em;
+    border-radius: 10px;
+    border: 1px dashed #473636;
+    height: 80px;
+    padding: 0.5em;
+} 
+
+.gras{
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.form-hotel >.btn {
+    border-radius: 10px dashed #633030;
+}
+
+.f-p { 
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-iframe{
+    margin-right: 100px;
+}
+
+/*************** fin du formulaire************/
+
+/* *************cartes du restaurant***************/ 
+
+.mtmain{/* corps   */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.mtimg {/* image */ 
+    width: 460px;
+    height: 550px;
+    margin: auto;
+    position: fixed;
+    top: 20%;
+    left: 23%;
+}
+
+.btn-carte{/* bouton de retour au sujet*/ 
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background: #a57b1b;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 14px;
+    padding: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.4s;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.bt-carte:hover{/* annuler l'effet :hover */
+    color:#ffffff ;
+}
+
+/*******************fin cartes restaurant***************** */
+
+/***************** fin plan du site ****************/
+
+
+/*début de footer */
+.mainmt{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.mt-contenu {
+    /* grow shrink basis permet de renvoyer le footer vers le bas*/ 
+    flex: 1 0 auto;
+}
+
+.mt-contenu p{
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+
+.f-img{
+    justify-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+footer {
+    flex-shrink: 0;/*^permet de maintenir le footer en bas de page */
+    border-top: 2px solid #BD9E57 ;
+    width: 100%;
+    background-color:#000;
+    color: white;
+}
+
+.mt-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 0px 0 10px;
+}
+
+.mt-infos h4,
+.mt-services h4,
+.mt-socials h4,
+.mt-mentions h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/********************debut PRESSE ********************/
+
+.presseArt{/*body  */
+    width: 100%;
+    margin: 0;
+    padding:0;
+    background-image: url(../img/presse.jpg);
+}
+
+.articleHotel {/* container  */
+    background-image: url(../img/presse.jpg);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center ;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.numero {/* div  du container*/
+    border: solid #B28737 1px;
+    background: white;
+    align-content: center;
+    padding: 10px;
+    margin: 2px;
+    width: 33%;
+    overflow: hidden;
+    flex-shrink:0 ;
+    }
+
+.numero>p, .numero>h2  {
+    color: #2a2a2a;
+}
+
+.numero>h2{
+    font-size:25px;
+    text-align: center;
+}
+
+.numero>p  {
+    font-size:11px;
+    text-align: justify;
+} 
+
+.journal{ 
+    float: left;
+    font-size: 11px;
+    border: solid #B28737 1px;
+    background: #0e0e2f;
+    color: white;
+    border-radius: 2px;
+    /* padding: 4px; */
+
+}
+.date {
+    float: right;
+    font-size: 11px;
+    border: solid #B28737 1px;
+    background: black;
+    color: white;
+    border-radius: 2px;
+    /* padding: 4px; */
+}
+
+.presseImg {
+    width: 100%;
+    border: 1px black ;
+    height: 40%;
+    }
+    
+.numero:hover {
+    transform: scale(0.9);
+    transition-duration: 1.9s;
+    }
+
+
+/* @media screen and min-width {
+    
+} */
+
+
+/******************fin PRESSE**************************/
+
