@@ -1,0 +1,104 @@
+.form-hotel{/* formulaire contact*/
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* .premiere{
+    
+    flex-direction: row;
+} */
+
+.form-hotel>h1{
+    margin-top: 2%;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+strong{
+    font-size: 12px;
+    text-align: flex-star;
+    color: #ff0000
+}
+.form-hotel >select {
+    margin-bottom: 20px 0;
+    padding-left: 0 10px;
+    width: 80%;
+}
+
+.form-hotel input[type="text"],
+.form-hotel input[type="tel"],
+.form-hotel input[type="email"]{
+    border: none;
+    border-radius: 10px dashed #473636;
+    outline:none;
+    width: 80%;
+    height: 40px;
+    margin: 1em;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-items: flex-end;
+    background-color: #f5f5dc; 
+}
+
+::placeholder{
+    color: #BD9E57;
+}
+
+.form-hotel>select {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 0;
+    width: 250px;
+}
+
+.form-hotel input[type="submit"]{
+    border: none;
+    height: 40px;
+    /* outline: none; */
+    font-size: 15px;
+    background-color: #BD9E57;
+    cursor: pointer;
+    border-radius:20px ;
+}
+
+.form-hotel label {
+    margin: 0;
+    padding: 0;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.form-hotel textarea{
+    display: block;
+    width: 80%;
+    margin-left: 1em;
+    border-radius: 10px;
+    border: 1px dashed #473636;
+    height: 80px;
+    padding: 0.5em;
+} 
+
+.gras{
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.form-hotel >.btn {
+    border-radius: 10px dashed #633030;
+}
+
+.f-p { 
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-iframe{
+    margin-right: 100px;
+}
+
+/*************** fin du formulaire************/
