@@ -1,0 +1,21 @@
+/********************début CGV**********************/
+.mentionMT{
+    margin-top:10% ;
+    border:  2px solid #af8716  !important ;
+    padding:  2% ;
+    height:  80% ;
+    justify-content: center;
+    margin: 20 px auto ;
+}
+
+.mentionMT h1 , .mentionJB h2 {
+    color:  #B28735 ;
+    text-align: center;
+}
+
+.mentionMT p {
+    text-align : justifier;
+    color:  #413f3f;
+}
+
+/*********************fin CGV**********************/
