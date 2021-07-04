@@ -1,0 +1,94 @@
+
+
+footer{
+    background-color: #000000; 
+    display: inline-block; 
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #ffffff
+}
+/* 
+.f-img{
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+} */
+
+.f-img{
+    justify-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+} 
+
+.fa-print{
+    color: #ffffff;
+    padding-top: 3%;
+}
+
+.mt-footer {
+    width: 100%;
+    margin: 0;/*0 auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 0;/*0px 0 10px;*/
+}
+
+.foot{
+    width: 25%;
+    display: flex; 
+    flex-flow: column;
+}
+
+.mt-infos h4, 
+.mt-services h4,
+.mt-mentions h4,
+.mt-socials h4,
+.mt-imprimer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align:start;
+}
+
+#newsletter {
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.mt-services > p{
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 14px;
+}
+
+.mt-legales a:hover,
+.mt-services p:hover,
+.mt-services a:hover,
+.mt-mentions a:hover,
+.mt-infos a:hover{
+    color: #BD9E57;
+}
+
+.mt-socials img {
+flex-grow: 1 50%;
+height: 20px;
+width: 20px;
+padding:0;
+margin:0;
+color: white;
+}
+
+#copyfoot{
+    justify-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 4%;
+    margin : 0;
+}
